@@ -23,7 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  <form action="<%=basePath%>03-users/usersAction.action" method="post">
+  <form action="<%=basePath%>/03-users/usersAction.action" method="post">
   	User1:<input type="text" name="users"><br>
   	User2:<input type="text" name="users"><br>
   	User3:<input type="text" name="users"><br>
