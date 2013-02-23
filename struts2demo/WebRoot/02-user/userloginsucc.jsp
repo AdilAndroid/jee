@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -25,6 +26,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
     Username is ${requestScope.user.username }<br>
     Password is ${requestScope.user.password }<br>
+    
+    <hr>
+    Using struts-tag:<br>
+    User info is <s:property value="user"/><br>
+    
     <%--
     
      --%>

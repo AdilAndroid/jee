@@ -25,9 +25,8 @@ public class UserConverter extends DefaultTypeConverter {
 			return result;
 			
 		} else if (toType.equals(String.class)) {
-			return null;
-//			User user  = (User)value;
-//			return new String("username:" + user.getUsername() + ";password:" + user.getPassword());
+			User user  = (User)value;
+			return new String("username:" + user.getUsername() + ";password:" + user.getPassword());
 		}
 		return super.convertValue(context, value, toType);
 	}
