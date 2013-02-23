@@ -1,6 +1,15 @@
 *.class
 
+
 # Package Files #
-*.jar
 *.war
 *.ear
+
+
+# IDE config directory
+.metadata/*
+*/.myeclipse/*
+*/.settings/*
+.gitignore.swp
+*/WebRoot/WEB-INF/classes/*
+fileupload/WebRoot/upload/*
