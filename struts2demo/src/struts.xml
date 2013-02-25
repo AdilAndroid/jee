@@ -7,4 +7,11 @@
 	<include file="02-user.xml"></include>
 	<include file="03-users.xml"></include>
 	<include file="04-method.xml"></include>
+	
+	<package name="default" extends="struts-default">
+		<action name="forwardAction">
+			<result name="success" type="redirect">/forwardaction.jsp</result>
+		</action>
+	</package>
+	
 </struts>
