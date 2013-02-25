@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'main.jsp' starting page</title>
+    <title>My JSP 'forwardaction.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -23,8 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my JSP page. <br>
-    <a href="forwardAction.action">forward-action</a><br>
-    <a href="wehavenotthisaction.action">default-action</a><br>
+    This is my Default-JSP page of this website. <br>
+    <a href="main.jsp">main.jsp</a>
   </body>
 </html>
