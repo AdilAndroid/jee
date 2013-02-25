@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="04-method" extends="struts-default" namespace="/04-method">
+		<action name="method1Action" class="com.freesoft.struts2.action.MethodAction" method="method1">
+			<result name="success">/04-method/methodsucc.jsp</result>
+		</action>
+		<action name="method2Action" class="com.freesoft.struts2.action.MethodAction" method="method2">
+			<result name="success">/04-method/methodsucc.jsp</result>
+		</action>
+		<action name="methodAction" class="com.freesoft.struts2.action.MethodAction" >
+			<result name="success">/04-method/methodsucc.jsp</result>
+		</action>
+	</package>
+</struts>

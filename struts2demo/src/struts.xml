@@ -4,6 +4,7 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<include file="01-login.xml"></include>
-	<include file="02-userAction.xml"></include>
-	<include file="03-usersAction.xml"></include>
+	<include file="02-user.xml"></include>
+	<include file="03-users.xml"></include>
+	<include file="04-method.xml"></include>
 </struts>
