@@ -13,5 +13,19 @@
 		<action name="methodAction" class="com.freesoft.struts2.action.MethodAction" >
 			<result name="success">/04-method/methodsucc.jsp</result>
 		</action>
+		
+		<action name="*Action" class="com.freesoft.struts2.action.CRUDAction" method="{1}">
+			<result name="success">/04-method/{1}result.jsp</result>
+		</action>
+		
+		<!-- 
+			例如此处可以传入
+			user_add.action/user_delete.action
+			school_add.action/school_delete.action
+			...	
+		 -->
+		<action name="*_*" class="com.freesoft.struts2.action.{1}Action" method="{2}">
+			<result name="success">/04-method/{1}{2}result.jsp</result>
+		</action>
 	</package>
 </struts>
