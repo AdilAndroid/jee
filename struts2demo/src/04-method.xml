@@ -13,5 +13,9 @@
 		<action name="methodAction" class="com.freesoft.struts2.action.MethodAction" >
 			<result name="success">/04-method/methodsucc.jsp</result>
 		</action>
+		
+		<action name="*Action" class="com.freesoft.struts2.action.CRUDAction" method="{1}">
+			<result name="success">/04-method/{1}result.jsp</result>
+		</action>
 	</package>
 </struts>
