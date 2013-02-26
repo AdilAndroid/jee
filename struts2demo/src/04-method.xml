@@ -27,5 +27,10 @@
 		<action name="*_*" class="com.freesoft.struts2.action.{1}Action" method="{2}">
 			<result name="success">/04-method/{1}{2}result.jsp</result>
 		</action>
+		
+		
+		<action name="*" class="com.freesoft.struts2.action.{1}Action" method="{1}">
+			<result name="success">/04-method/{1}result.jsp</result>
+		</action>
 	</package>
 </struts>
