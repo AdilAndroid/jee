@@ -12,4 +12,9 @@ import com.opensymphony.xwork2.ActionSupport;
 @Results(@Result(name="success", location="/result.jsp"))
 public class AnnotationAction extends ActionSupport {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 9029792565444480955L;
+
 }
