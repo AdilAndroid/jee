@@ -4,6 +4,11 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class CRUDAction extends ActionSupport {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9080641834324035479L;
+
 	@Override
 	public String execute() throws Exception {
 		return SUCCESS;
