@@ -24,7 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<s:form action="05-validation/validationRegister.action" >
+  	<s:form action="05-validation/validationFrameworkRegister.action" >
   		<h1>用户注册</h1><hr>
   		<!--<s:actionerror />
   		 <s:fielderror cssStyle="clear:both; color: #F33;"></s:fielderror> -->

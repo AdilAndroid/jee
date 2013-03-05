@@ -8,5 +8,9 @@
 			<result name="success">/05-validation/registersucc.jsp</result>
 			<result name="input">/05-validation/register.jsp</result>
 		</action>
+		<action name="validationFrameworkRegister" class="com.freesoft.struts2.action.ValidationFrameworkRegisterAction">
+			<result name="success">/05-validation/registersucc.jsp</result>
+			<result name="input">/05-validation/register.jsp</result>
+		</action>
 	</package>
 </struts>
