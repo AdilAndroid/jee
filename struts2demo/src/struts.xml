@@ -7,7 +7,9 @@
 	<include file="02-user.xml"></include>
 	<include file="03-users.xml"></include>
 	<include file="04-method.xml"></include>
+	<include file="05-validation.xml"></include>
 	
+	<!-- 
 	<package name="default" extends="struts-default">
 		<default-action-ref name="defaultAction"></default-action-ref>
 		<action name="defaultAction">
@@ -18,5 +20,5 @@
 			<result name="success" type="redirect">/forwardaction.jsp</result>
 		</action>
 	</package>
-	
+	 -->
 </struts>
