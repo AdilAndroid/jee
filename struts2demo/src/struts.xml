@@ -10,6 +10,7 @@
 	<include file="05-validation.xml"></include>
 	<include file="06-exception.xml"></include>
 	<include file="07-multitier.xml"></include>
+	<include file="08-modeldriven.xml"></include>
 	
 	<!-- 
 	<package name="default" extends="struts-default">

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="08-modeldriven" extends="struts-default" namespace="/08-modeldriven">
+		<action name="login" class="com.freesoft.struts2.action.ModelDrivenLoginAction">
+			<result name="success">/08-modeldriven/loginsucc.jsp</result>
+			<result name="input">/08-modeldriven/login.jsp</result>
+		</action>
+	</package>
+</struts>
