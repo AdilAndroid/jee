@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="07-multitier" extends="struts-default" namespace="/07-multitier">
+		<action name="login" class="com.freesoft.struts2.action.MultiTierLoginAction">
+			<result name="success">/07-multitier/loginsucc.jsp</result>
+			<result name="input">/07-multitier/login.jsp</result>
+<!-- 
+			<result name="usernameexception">/06-exception/usernameexception.jsp</result>
+			<result name="passwordexception">/06-exception/passwordexception.jsp</result>
+			<exception-mapping result="usernameexception" exception="com.freesoft.struts2.exception.UsernameException"></exception-mapping>
+			<exception-mapping result="passwordexception" exception="com.freesoft.struts2.exception.PasswordException"></exception-mapping>
+ -->			
+		</action>
+	</package>
+</struts>
