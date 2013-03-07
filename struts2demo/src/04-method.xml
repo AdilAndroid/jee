@@ -17,7 +17,6 @@
 		<action name="*Action" class="com.freesoft.struts2.action.CRUDAction" method="{1}">
 			<result name="success">/04-method/{1}result.jsp</result>
 		</action>
-<<<<<<< HEAD
 		
 		<!-- 
 			例如此处可以传入
@@ -33,7 +32,5 @@
 		<action name="*" class="com.freesoft.struts2.action.{1}Action" method="{1}">
 			<result name="success">/04-method/{1}result.jsp</result>
 		</action>
-=======
->>>>>>> d4d04652d79b83a9ee979eed33dda3eef74cdc3a
 	</package>
 </struts>
