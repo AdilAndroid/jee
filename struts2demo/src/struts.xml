@@ -12,6 +12,7 @@
 	<include file="07-multitier.xml"></include>
 	<include file="08-modeldriven.xml"></include>
 	<include file="09-getcontainerobject.xml"></include>
+	<include file="10-resulttype.xml"></include>
 	
 	<!-- 
 	<package name="default" extends="struts-default">

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="10-resulttype" extends="struts-default" namespace="/10-resulttype">
+		<action name="login" class="com.freesoft.struts2.action.ResultTypeLoginAction">
+			<!-- 
+				dispatcher
+			<result name="success">/10-resulttype/loginsucc.jsp</result>
+			 -->
+			<!-- 
+				redirect
+			<result name="success" type="redirect">/10-resulttype/loginsucc.jsp</result>
+			 -->
+			<!-- 
+				chain
+				<result name="success" type="chain">
+					<param name="actionName">login2</param>
+				</result>
+			 -->
+			<result name="success" type="redirectAction">
+				<param name="actionName">login2</param>
+			</result>
+			<result name="input">/10-resulttype/login.jsp</result>
+		</action>
+		
+		<action name="login2" class="com.freesoft.struts2.action.ResultTypeLogin2Action">
+			<result name="success">/10-resulttype/loginsucc.jsp</result>
+		</action>
+		
+	</package>
+</struts>
