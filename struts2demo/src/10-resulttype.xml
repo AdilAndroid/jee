@@ -21,6 +21,10 @@
 			 -->
 			<result name="success" type="redirectAction">
 				<param name="actionName">login2</param>
+				<!-- pass parameter
+				<param name="username">${username}</param>
+				<param name="password">${password}</param>
+				 -->
 			</result>
 			<result name="input">/10-resulttype/login.jsp</result>
 		</action>
