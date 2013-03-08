@@ -28,7 +28,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   	<hr>
   		<h2>ValueStack Value</h2>
 		<s:property value="username"/><br>
-		<s:property value="password"/>
+		<s:property value="password"/><br>
+		<s:property value="usernameAndPassword"/>
   	<hr>
   	<a href="<%=basePath %>10-resulttype/login.jsp">Back</a>
   </body>

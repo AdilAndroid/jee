@@ -26,7 +26,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   	<h1>Login</h1>
   	<hr>
-  	<s:form method="post" action="/10-resulttype/login.action">
+  	<s:form method="get" action="/10-resulttype/login.action">
   		<s:textfield name="username" label="username"></s:textfield>
   		<s:password name="password" label="password"></s:password>
   		<s:textfield name="age" label="age"></s:textfield>

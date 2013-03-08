@@ -13,19 +13,20 @@
 				redirect
 			<result name="success" type="redirect">/10-resulttype/loginsucc.jsp</result>
 			 -->
-			<!-- 
-				chain
-				<result name="success" type="chain">
+				<result name="success" type="redirectAction">
 					<param name="actionName">login2</param>
+					<param name="username">${username}</param>
+					<param name="password">${password}</param>
+					<param name="usernameAndPassword">${usernameAndPassword}</param>
 				</result>
-			 -->
+			<!-- 
 			<result name="success" type="redirectAction">
 				<param name="actionName">login2</param>
-				<!-- pass parameter
 				<param name="username">${username}</param>
 				<param name="password">${password}</param>
-				 -->
+				<param name="usernameAndPassword">${usernameAndPassword}</param>
 			</result>
+			 -->
 			<result name="input">/10-resulttype/login.jsp</result>
 		</action>
 		

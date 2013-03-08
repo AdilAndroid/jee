@@ -9,6 +9,7 @@ public class ResultTypeLogin2Action extends ActionSupport {
 	private String password;
 	private int age;
 	private Date birthday;
+	private String usernameAndPassword;
 	
 	public String getUsername() {
 		return username;
@@ -34,6 +35,12 @@ public class ResultTypeLogin2Action extends ActionSupport {
 	}
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
+	}
+	public String getUsernameAndPassword() {
+		return usernameAndPassword;
+	}
+	public void setUsernameAndPassword(String usernameAndPassword) {
+		this.usernameAndPassword = usernameAndPassword;
 	}
 	@Override
 	public String execute() throws Exception {
