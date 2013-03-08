@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="11-sessiontoken" extends="struts-default" namespace="/11-sessiontoken">
+		<action name="login" class="com.freesoft.struts2.action.SessionTokenLoginAction">
+			<result name="success">/11-sessiontoken/loginsucc.jsp</result>
+			<result name="invalid.token">/11-sessiontoken/reduplicatelogin.jsp</result>
+			
+			<interceptor-ref name="token"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>		
+	</package>
+</struts>
