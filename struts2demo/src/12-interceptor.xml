@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="12-interceptor" extends="struts-default" namespace="/12-interceptor">
+		<interceptors>
+			<interceptor name="test" class="com.freesoft.struts2.interceptor.TestInterceptor">
+				<param name="paramTest">123</param>
+			</interceptor>
+		</interceptors>
+		<action name="login" class="com.freesoft.struts2.action.InterceptorLoginAction">
+			<result name="success">/12-interceptor/loginsucc.jsp</result>
+			<interceptor-ref name="test"></interceptor-ref>
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+		</action>		
+	</package>
+</struts>
