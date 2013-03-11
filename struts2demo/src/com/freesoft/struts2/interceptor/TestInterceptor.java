@@ -7,7 +7,7 @@ public class TestInterceptor implements Interceptor {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -5985543767871318322L;
+	private static final long serialVersionUID = 5980250792753146872L;
 	private String paramTest;
 	
 	public void destroy() {

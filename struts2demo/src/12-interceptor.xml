@@ -8,10 +8,15 @@
 			<interceptor name="test" class="com.freesoft.struts2.interceptor.TestInterceptor">
 				<param name="paramTest">123</param>
 			</interceptor>
+			<interceptor name="test2" class="com.freesoft.struts2.interceptor.TestAbstractInterceptor">
+				<param name="paramTest">456</param>
+			</interceptor>
 		</interceptors>
+		
 		<action name="login" class="com.freesoft.struts2.action.InterceptorLoginAction">
 			<result name="success">/12-interceptor/loginsucc.jsp</result>
 			<interceptor-ref name="test"></interceptor-ref>
+			<interceptor-ref name="test2"></interceptor-ref>
 			<interceptor-ref name="defaultStack"></interceptor-ref>
 		</action>		
 	</package>
