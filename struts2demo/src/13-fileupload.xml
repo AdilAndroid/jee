@@ -10,5 +10,11 @@
 		<action name="multifileupload" class="com.freesoft.struts2.action.MultiFileUploadAction">
 			<result name="success">/13-fileupload/multiresult.jsp</result>
 		</action>		
+		<action name="downloadfile" class="com.freesoft.struts2.action.DownloadFileAction">
+			<result type="stream">
+				<param name="inputName">downloadFile</param>
+				<param name="contentDisposition">attachment;filename="货币战争.txt"</param>
+			</result>
+		</action>		
 	</package>
 </struts>
