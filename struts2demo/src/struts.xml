@@ -15,6 +15,7 @@
 	<include file="10-resulttype.xml"></include>
 	<include file="11-sessiontoken.xml"></include>
 	<include file="12-interceptor.xml"></include>
+	<include file="13-fileupload.xml"></include>
 	
 	<!-- 
 	<package name="default" extends="struts-default">
