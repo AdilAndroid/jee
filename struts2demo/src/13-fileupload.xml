@@ -16,5 +16,12 @@
 				<param name="contentDisposition">attachment;filename="货币战争.txt"</param>
 			</result>
 		</action>		
+		<action name="downloadfileincludefilename" class="com.freesoft.struts2.action.DownloadFileIncludeFileNameAction">
+			<result type="stream">
+				<param name="inputName">downloadFile</param>
+				<param name="contentDisposition">attachment;filename=${filename}</param>
+				<param name="contentType">text/plain;charset=ISO-8859-1</param>
+			</result>
+		</action>
 	</package>
 </struts>
