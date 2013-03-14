@@ -23,7 +23,6 @@ public class DownloadFileIncludeFileNameAction extends ActionSupport {
 		try {
 			filename=new String(filename.getBytes(),"ISO-8859-1");
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
 		return filename;
@@ -34,11 +33,6 @@ public class DownloadFileIncludeFileNameAction extends ActionSupport {
 	}
 	
 	public InputStream getDownloadFile() {
-//		try {
-//			filename = new String(filename.getBytes(), "ISO8859-1");
-//		} catch (UnsupportedEncodingException e) {
-//			e.printStackTrace();
-//		}
 		return ServletActionContext.getServletContext().getResourceAsStream("/upload/" + filename);
 	}
 
