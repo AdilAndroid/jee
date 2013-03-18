@@ -14,7 +14,7 @@ import org.dom4j.io.XMLWriter;
 import com.freesoft.struts2.bean.User;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class XMLDataAction extends ActionSupport {
+public class GetXMLDataAction extends ActionSupport {
 	private String name;
 
 	/**

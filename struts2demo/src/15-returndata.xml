@@ -3,9 +3,16 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
-	<package name="15-returndata" extends="struts-default" namespace="/15-returndata">
-		<action name="ajaxaction" class="com.freesoft.struts2.action.XMLDataAction">
+	<package name="15-returndata" extends="json-default" namespace="/15-returndata">
+		<action name="ajaxaction" class="com.freesoft.struts2.action.GetXMLDataAction">
 		</action>		
-		
+		<action name="gsonaction" class="com.freesoft.struts2.action.GetGsonDataAction">
+		</action>				
+		<action name="jsonaction" class="com.freesoft.struts2.action.GetJsonDataAction">
+			<result name="success" type="json" >
+				<param name="excludeProperties">name</param>
+			</result>
+			
+		</action>	
 	</package>
 </struts>
