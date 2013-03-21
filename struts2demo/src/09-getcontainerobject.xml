@@ -8,5 +8,23 @@
 			<result name="success">/09-getcontainerobject/loginsucc.jsp</result>
 			<result name="input">/09-getcontainerobject/login.jsp</result>
 		</action>
+		
+		<action name="actioncontextlogin" class="com.freesoft.struts2.action.ActionContextLoginAction">
+			<result name="success">/09-getcontainerobject/logintestsucc.jsp</result>
+		</action>
+		
+		<action name="ioclogin" class="com.freesoft.struts2.action.IoCLoginAction">
+			<result name="success">/09-getcontainerobject/logintestsucc.jsp</result>
+		</action>
+		
+		
+		<action name="servletactioncontextlogin" class="com.freesoft.struts2.action.ServletActionContextLoginAction">
+			<result name="success">/09-getcontainerobject/logintestsucc.jsp</result>
+		</action>
+		
+		
+		<action name="servletioclogin" class="com.freesoft.struts2.action.ServletIoCLoginAction">
+			<result name="success">/09-getcontainerobject/logintestsucc.jsp</result>
+		</action>
 	</package>
 </struts>
