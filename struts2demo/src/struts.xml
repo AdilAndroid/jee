@@ -17,6 +17,7 @@
 	<include file="12-interceptor.xml"></include>
 	<include file="13-fileupload.xml"></include>
 	<include file="15-returndata.xml"></include>
+	<include file="16-json.xml"></include>
 	
 	<!-- 
 	<package name="default" extends="struts-default">
