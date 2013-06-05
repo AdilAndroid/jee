@@ -12,4 +12,7 @@
 */.settings/*
 .gitignore.swp
 */WebRoot/WEB-INF/classes/*
+*/WebRoot/WEB-INF/lib/*
+*/build/*
+
 fileupload/WebRoot/upload/*
