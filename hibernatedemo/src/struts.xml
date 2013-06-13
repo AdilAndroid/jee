@@ -6,6 +6,8 @@
 	<package name="default" extends="struts-default">
 		<action name="blankaction" class="com.freesoft.action.BlankAction">
 			<result>/index.jsp</result>
-		</action>
+		</action>		
 	</package>
+	
+	<include file="./struts_cfg/01_person.xml"></include>
 </struts>
