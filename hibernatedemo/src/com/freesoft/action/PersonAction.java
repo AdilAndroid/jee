@@ -1,6 +1,11 @@
 package com.freesoft.action;
 
 import java.util.Date;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 
 import com.freesoft.bean.Person;
 import com.freesoft.service.PersonService;
@@ -18,6 +23,8 @@ public class PersonAction extends ActionSupport {
 	private String password;
 	private int age;
 	private Date registerDate;
+	private List<Person> personList = null;
+	private Person person = null;
 
 	public String save() throws Exception {
 		Person p = new Person();
@@ -31,7 +38,49 @@ public class PersonAction extends ActionSupport {
 		service.savePerson(p);
 		return SUCCESS;
 	}
+	
+	public String list() throws Exception {
+		PersonService s = new PersonServiceImpl();
+		personList = s.listPerson();
+		HttpServletRequest req = ServletActionContext.getRequest();
+		req.setAttribute("personList", personList);
+		return SUCCESS;
+	}
+	
+	public String describe() throws Exception {
+		PersonService s = new PersonServiceImpl();
+		Person p = s.personDescribe(id);
+		HttpServletRequest req = ServletActionContext.getRequest();
+		req.setAttribute("person", p);
+		return SUCCESS;
+	}
+	
+	public String delete() throws Exception {
+		PersonService s = new PersonServiceImpl();
+		s.deletePerson(id);
+		return SUCCESS;
+	}
 
+	public String updatejsp() throws Exception {
+		PersonService s = new PersonServiceImpl();
+		Person p = s.personDescribe(id);
+		HttpServletRequest req = ServletActionContext.getRequest();
+		req.setAttribute("person", p);
+		return SUCCESS;
+	}
+	
+	public String update() throws Exception {
+		PersonService s = new PersonServiceImpl();
+		Person p = s.personDescribe(id);
+		
+		p.setPassword(password);
+		p.setAge(age);
+		p.setRegisterDate(registerDate);
+		
+		s.updatePerson(p);
+		return SUCCESS;
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -70,5 +119,13 @@ public class PersonAction extends ActionSupport {
 
 	public void setRegisterDate(Date registerDate) {
 		this.registerDate = registerDate;
+	}
+
+	public List<Person> getPersonList() {
+		return personList;
+	}
+
+	public Person getPerson() {
+		return person;
 	}
 }

@@ -4,8 +4,29 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<package name="01_person" extends="struts-default" namespace="/01_person">
-			<action name="saveperson" class="com.freesoft.action.PersonAction" method="save">
-			<result>/01_person/personresult.jsp</result>
+		<action name="saveperson" class="com.freesoft.action.PersonAction"
+			method="save">
+			<result type="redirectAction">listperson</result>
+		</action>		
+		<action name="listperson" class="com.freesoft.action.PersonAction"
+			method="list">
+			<result>/01_person/personlist.jsp</result>
+		</action>	
+		<action name="persondesc" class="com.freesoft.action.PersonAction"
+			method="describe">
+			<result>/01_person/persondesc.jsp</result>
+		</action>
+		<action name="deleteperson" class="com.freesoft.action.PersonAction"
+			method="delete">
+			<result type="redirectAction">listperson</result>
+		</action>
+		<action name="updatepersonjsp" class="com.freesoft.action.PersonAction"
+			method="updatejsp">
+			<result>/01_person/updateperson.jsp</result>
+		</action>
+		<action name="updateperson" class="com.freesoft.action.PersonAction"
+			method="update">
+			<result type="redirectAction">listperson</result>
 		</action>
 	</package>
 </struts>

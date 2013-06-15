@@ -2,6 +2,18 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
+<!-- 
+person表创建语句
+
+DROP TABLE IF EXISTS person;
+CREATE TABLE IF NOT EXISTS person (	
+	id INT NOT NULL PRIMARY KEY,
+	username VARCHAR(20),
+	password VARCHAR(20),
+	age INT,
+	registerDate DATE
+);
+ -->
 	<!--name 实体类的 包名+ 类名 table数据库的表名 -->
 	<class name="com.freesoft.bean.Person" table="person">
 		<!-- 主键 -->
