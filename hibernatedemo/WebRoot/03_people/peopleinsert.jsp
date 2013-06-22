@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -21,11 +22,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    This is my hibernatedemo JSP page. <br>
-    <a href="01_person/personadd.jsp">Person Add</a><br><span></span>
-    <a href="02_execandwaitinterceptor/input.jsp">Excute And Wait</a><br><span></span>
-    <a href="03_people/peopleinsert.jsp">People Insert</a><br><span></span>
-    
-    
+  	<s:form action="03_people/insertpeople.action">
+  		<s:textfield label="username" name="username"></s:textfield>
+  		<s:submit value="submit"></s:submit>
+  	</s:form>
   </body>
 </html>
