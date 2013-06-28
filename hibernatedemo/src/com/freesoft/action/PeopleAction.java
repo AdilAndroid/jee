@@ -12,6 +12,10 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class PeopleAction extends ActionSupport {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3225270264953516396L;
 	private String username;
 	private String password;
 	private Integer telphone;

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="04_customer_order" extends="struts-default" namespace="/04_customer_order">
+		<action name="insertcustomer" class="com.freesoft.action.CustomerAction"
+			method="insert">
+			<result name="success">result.jsp</result>
+		</action>
+			<action name="findcustomer" class="com.freesoft.action.CustomerAction"
+			method="find">
+			<result name="success">result.jsp</result>
+		</action>
+	</package>
+</struts>
