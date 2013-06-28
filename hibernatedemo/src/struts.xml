@@ -13,4 +13,5 @@
 	<include file="./struts_cfg/02_execandwaitinterceptor.xml"></include>
 	<include file="./struts_cfg/03_people.xml"></include>
 	<include file="./struts_cfg/04_customer_order.xml"></include>
+	<include file="./struts_cfg/05_category.xml"></include>
 </struts>

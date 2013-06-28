@@ -25,6 +25,7 @@
 		<mapping resource="entity/People.hbm.xml" />
 		<mapping resource="entity/Customer.hbm.xml" />
 		<mapping resource="entity/Order.hbm.xml" />
+		<mapping resource="entity/Category.hbm.xml" />
 	</session-factory>
 
 </hibernate-configuration>
