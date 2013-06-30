@@ -26,6 +26,8 @@
 		<mapping resource="entity/Customer.hbm.xml" />
 		<mapping resource="entity/Order.hbm.xml" />
 		<mapping resource="entity/Category.hbm.xml" />
+		<mapping resource="entity/Student.hbm.xml" />
+		<mapping resource="entity/IdCard.hbm.xml" />
 	</session-factory>
 
 </hibernate-configuration>
