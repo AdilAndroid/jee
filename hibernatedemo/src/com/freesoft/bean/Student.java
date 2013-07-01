@@ -1,9 +1,13 @@
 package com.freesoft.bean;
 
+import java.util.Set;
+
 public class Student {
 	private String id;
-	private int number;
-	private IdCard idcard;
+	private Long student_number;
+	private Team team;
+	private Set<Course> courses;
+//	private IdCard idcard;
 	
 	public String getId() {
 		return id;
@@ -11,17 +15,29 @@ public class Student {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getNumber() {
-		return number;
+//	public IdCard getIdcard() {
+//		return idcard;
+//	}
+//	public void setIdcard(IdCard idcard) {
+//		this.idcard = idcard;
+//	}
+	public Set<Course> getCourses() {
+		return courses;
 	}
-	public void setNumber(int number) {
-		this.number = number;
+	public void setCourses(Set<Course> courses) {
+		this.courses = courses;
 	}
-	public IdCard getIdcard() {
-		return idcard;
+	public Team getTeam() {
+		return team;
 	}
-	public void setIdcard(IdCard idcard) {
-		this.idcard = idcard;
+	public void setTeam(Team team) {
+		this.team = team;
+	}
+	public Long getStudent_number() {
+		return student_number;
+	}
+	public void setStudent_number(Long student_number) {
+		this.student_number = student_number;
 	}
 	
 }

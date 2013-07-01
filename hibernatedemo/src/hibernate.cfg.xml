@@ -21,13 +21,17 @@
 		<property name="show_sql">true</property>
 		<!-- <property name="format_sql">true</property> -->
 
+<!-- 
 		<mapping resource="entity/Person.hbm.xml" />
 		<mapping resource="entity/People.hbm.xml" />
 		<mapping resource="entity/Customer.hbm.xml" />
 		<mapping resource="entity/Order.hbm.xml" />
 		<mapping resource="entity/Category.hbm.xml" />
-		<mapping resource="entity/Student.hbm.xml" />
 		<mapping resource="entity/IdCard.hbm.xml" />
+		<mapping resource="entity/Team.hbm.xml" />
+ -->
+		<mapping resource="entity/Student.hbm.xml" />
+		<mapping resource="entity/Course.hbm.xml" />
 	</session-factory>
 
 </hibernate-configuration>

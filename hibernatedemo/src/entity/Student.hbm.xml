@@ -9,10 +9,22 @@
 		<id name="id" type="string" column="id">
 			<generator class="uuid" />
 		</id>
-		<property name="number" type="integer">
-			<column name="number" />
+		<property name="student_number" type="long">
+			<column name="student_number" />
 		</property>
+		
+<!-- 
+		<many-to-one name="team" class="com.freesoft.bean.Team" >
+			<column name="team_id"></column>
+		</many-to-one>
+ -->		
 
-		<one-to-one name="idcard" class="com.freesoft.bean.IdCard" cascade="all"></one-to-one>
+		<!-- student与course是多对多关系，连接表是student_course，只能对映射关系进行保存和更新，但不能删除，所以不能用all -->
+		<set name="courses" table="student_course" cascade="save-update">
+			<key column="student_id"></key>
+			<many-to-many class="com.freesoft.bean.Course" column="course_id"></many-to-many>
+		</set>
+		<!-- 与idcard是一对一关系 
+		<one-to-one name="idcard" class="com.freesoft.bean.IdCard" cascade="all"></one-to-one>-->
 	</class>
 </hibernate-mapping>
